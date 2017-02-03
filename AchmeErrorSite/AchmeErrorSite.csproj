@@ -465,6 +465,7 @@
   <ItemGroup>
     <Compile Include="AchmeClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiteApplication.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
