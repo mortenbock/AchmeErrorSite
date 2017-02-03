@@ -424,6 +424,9 @@
     <Content Include="config\BaseRestExtensions.config" />
     <Content Include="config\applications.config" />
     <Content Include="config\404handlers.config" />
+    <Content Include="Views\CompiledError.cshtml" />
+    <Content Include="Views\Home.cshtml" />
+    <Content Include="Views\RazorError.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -459,11 +462,15 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AchmeClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
