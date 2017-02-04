@@ -2,7 +2,10 @@
 	Layout = null;
 }
 <p>Hello</p>
-<p><a href="/razorerror">Trigger razor error</a></p>
-<p><a href="/compilederror">Trigger compiled error</a></p>
-<p><a href="/thisisnotthere">Trigger Umbraco 404</a></p>
-<p><a href="/Media/thisisnotthere.jpg">Trigger Media 404</a></p>
+<p><a href="/umbraco/">Umbraco</a> login: admin@example.com / 12345678</p>
+<p><a href="/razorerror">Trigger razor error</a> (Should respond with 500 status)</p>
+<p><a href="/compilederror">Trigger compiled error</a> (Should respond with 500 status)</p>
+<p><a href="/foo&lt;script&gt;">Trigger Request Validation error</a> (Should respond with 400 status)</p>
+<p>To trigger an IIS 500, rename Umbraco.Core.dll to Umbraco.Core.dll.bak (Should respond with 500 status)</p>
+<p><a href="/thisisnotthere">Trigger Umbraco 404</a> (Should respond with 404 status)</p>
+<p><a href="/Media/thisisnotthere.jpg">Trigger Media 404</a> (Should respond with 404 status)</p>
